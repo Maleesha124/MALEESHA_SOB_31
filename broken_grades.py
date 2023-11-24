@@ -21,7 +21,7 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #extra bracket and int needs to be added
 
 exam_3 = str(input("Input exam grade three: "))
 
