@@ -40,7 +40,7 @@ elif avg >= 70 and avg < 80: #corrected the condition for grade C
     letter_grade = "C" #added double quotes instead of a single quote
 elif avg <= 69 and avg >= 60: #corrected the condition for grade D
     letter_grade = "D"
-elif:
+else: #changed elif to else 
     letter_grade = "F"
 
 for grade in grades:
