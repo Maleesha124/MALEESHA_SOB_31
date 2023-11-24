@@ -24,7 +24,7 @@ print("For every number that exists in the sequence but is in wrong place, you g
 print("The game ends when you get 4 bulls!")
 print("Type exit at any prompt to exit.")
 
-while playing==True: #added '==True' ensures game is played while player is playing
+while playing:
     user_guess = input("Give me your best guess!")#corrected 'raw_input' to 'input'
     if user_guess == "exit":
         break
@@ -35,7 +35,7 @@ while playing==True: #added '==True' ensures game is played while player is play
 
     if cowbullcount[1]==4:
         playing = False
-        print("You win the game after " + str(guesses) + "! The number was "+str(number))
+        print("You win the game after " + str(guesses) + "guesses! The number was "+str(number))#added the word guesses
         break #redundant exit
     else:
         print("Your guess isn't quite right, try again.")
