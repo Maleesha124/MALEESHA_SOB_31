@@ -12,5 +12,5 @@ if year <= 1900: #added a colon after the condition
     print ("Woah, that's the past!") #changed the single quotes of the statement to be printed into double quotes
 elif year > 1900 and year < 2020: #changed the && to and (logical operator)
     print ("That's totally the present!")
-elif:
+else: #changed elif to else due to syntax error
     print ("Far out, that's the future!!")
