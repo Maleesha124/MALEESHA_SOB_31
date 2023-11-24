@@ -30,7 +30,7 @@ sum = 0
 for grade in grades: #corrected the name of the variable
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #corrected the name of the variable
 
 if avg >= 90:
     letter_grade = "A"
