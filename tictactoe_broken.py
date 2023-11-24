@@ -102,6 +102,8 @@ if __name__ == '__main__':
             row = convert_input_to_coordinate(int(input("Which row? (start with 1) ")))
             column = convert_input_to_coordinate(int(input("Which column? (start with 1) ")))
             available = check_space_empty(game, row, column) #added the column to correct the parameters in the function
+            if available == False:
+                print("the box is occupied, select another row and column") #added a print statement to inform the user if they select a box that is already occupied
         game = add_piece(game, player, row, column)
         display_game(game)
         player = switch_player(player)
