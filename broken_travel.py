@@ -10,7 +10,7 @@ year == int(input("Greetings! What is your year of origin? ")) #add a bracket af
 
 if year <= 1900: #added a colon after the condition
     print ("Woah, that's the past!") #changed the single quotes of the statement to be printed into double quotes
-elif year > 1900 && year < 2020:
+elif year > 1900 and year < 2020: #changed the && to and (logical operator)
     print ("That's totally the present!")
 elif:
     print ("Far out, that's the future!!")
