@@ -11,7 +11,7 @@ def compare_numbers(number, user_guess):
         elif user_guess[i] in number: #if the user guesses the number incorrectly, 1 cow is added
             cows+=1
             
-    return cowbull
+    return cows, bulls #changed the return to fit the code
 
 playing = True #gotta play the game
 number = str(random.randint(0,9999)) #random 4 digit number
