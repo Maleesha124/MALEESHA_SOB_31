@@ -23,7 +23,7 @@ exam_one = int(input("Input exam grade one: "))
 
 exam_two = int(input("Input exam grade two: ")) #extra bracket and int needs to be added
 
-exam_3 = int(input("Input exam grade three: ")) #change str to int
+exam_three = int(input("Input exam grade three: ")) #change str to int and changed the varaible name to three
 
 grades = [exam_one, exam_two, exam_three] #added missing commas
 sum = 0
