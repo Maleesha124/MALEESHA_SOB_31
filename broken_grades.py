@@ -34,7 +34,7 @@ avg = sum / len(grades) #corrected the name of the variable
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: #added colon
     letter_grade = "B"
 elif avg >= 70 and avg < 80: #corrected the condition for grade C
     letter_grade = "C" #added double quotes instead of a single quote
