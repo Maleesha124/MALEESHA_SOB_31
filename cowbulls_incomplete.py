@@ -2,6 +2,15 @@ import random
 
 def compare_numbers(number, user_guess):
     ## your code here
+    cows = 0 #counting cows
+    bulls = 0 #counting bulls
+
+    for i in range(len(number)): #for the random 4 digit number generated
+        if user_guess[i] == number[i]: #if the user guesses the number correctly, 1 bull is added
+            bulls+=1
+        elif user_guess[i] in number: #if the user guesses the number incorrectly, 1 cow is added
+            cows+=1
+            
     return cowbull
 
 playing = True #gotta play the game
@@ -15,8 +24,8 @@ print("For every number that exists in the sequence but is in wrong place, you g
 print("The game ends when you get 4 bulls!")
 print("Type exit at any prompt to exit.")
 
-while playing:
-    user_guess = raw_input("Give me your best guess!")
+while playing==True: #added '==True' ensures game is played while player is playing
+    user_guess = input("Give me your best guess!")#corrected 'raw_input' to 'input'
     if user_guess == "exit":
         break
     cowbullcount = compare_numbers(number,user_guess)
