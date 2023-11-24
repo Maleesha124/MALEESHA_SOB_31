@@ -6,7 +6,7 @@
 # if he is from the distant past (before 1900),
 # the present era (1900-2020) or from the far future (beyond 2020).
 
-year == int(input("Greetings! What is your year of origin? ")) #add a bracket after int and corrected the single quote to double quotes
+year = int(input("Greetings! What is your year of origin? "))#changed the '==' to '='  #add a bracket after int and corrected the single quote to double quotes
 
 if year <= 1900: #added a colon after the condition
     print ("Woah, that's the past!") #changed the single quotes of the statement to be printed into double quotes
