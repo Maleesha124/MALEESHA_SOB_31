@@ -67,7 +67,7 @@ def add_piece(game, player, row, column):
     row: 0-index row
     column: 0-index column
     """
-    game[row][column+1] = player
+    game[row][column] = player
     return game
 
 def check_space_empty(game, row, column):
@@ -101,7 +101,7 @@ if __name__ == '__main__':
         while not available: #added a missing colon
             row = convert_input_to_coordinate(int(input("Which row? (start with 1) ")))
             column = convert_input_to_coordinate(int(input("Which column? (start with 1) ")))
-            available = check_space_empty(game, row)
+            available = check_space_empty(game, row, column) #added the column to correct the parameters in the function
         game = add_piece(game, player, row, column)
         display_game(game)
         player = switch_player(player)
