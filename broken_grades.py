@@ -36,9 +36,9 @@ if avg >= 90:
     letter_grade = "A"
 elif avg >= 80 and avg < 90
     letter_grade = "B"
-elif avg >= 79 and avg < 80: #corrected the condition for grade C
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg >= 70 and avg < 80: #corrected the condition for grade C
+    letter_grade = "C" #added double quotes instead of a single quote
+elif avg <= 69 and avg >= 60: #corrected the condition for grade D
     letter_grade = "D"
 elif:
     letter_grade = "F"
